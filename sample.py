@@ -61,7 +61,7 @@ class news:
 
     def get_news(self):
         # Init
-        newsapi = NewsApiClient(api_key='0a28e65c5d824f299c672cdcecbdac2c')
+        newsapi = NewsApiClient(api_key='key')
 
         #sources = newsapi.get_sourcesa)llklkjjliljsjlssadkisaiioaj
         top_headlines = newsapi.get_everything(sources='bbc-news')
@@ -115,12 +115,12 @@ class news:
     def send_news(self,recv, file):
         body = 'Dear Subscriber,\n\nPlease find your daily dose of mid-night news. \n\nRegards,\n The Midnight News'
         # put your email here
-        sender = 'abdulazizibrahim94@gmail.com'
+        sender = 'news@gmail.com'
         # get the password in the gmail (manage your google account, click on the avatar on the right)
         # then go to security (right) and app password (center)
         # insert the password and then choose mail and this computer and then generate
         # copy the password generated here
-        password = 'abdulaziz99'
+        password = '--'
         # put the email of the receiver here
         receiver = recv
 
